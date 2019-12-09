@@ -1,0 +1,27 @@
+div {
+	text-align:center;
+	}
+.entete{
+    
+    height:20px;
+    width:200px;
+    border: 1px solid #6F624C;
+    background-color: thistle;
+    
+}
+.corps{
+    
+    height:100px;
+    width:200px;
+    border: 1px solid #6F624C;
+    background-color: thistle;
+    
+}
+.piedpage{
+           
+    height:100px;
+    width:200px;
+    border: 1px solid #6F624C;
+    background-color: thistle;
+            
+        }

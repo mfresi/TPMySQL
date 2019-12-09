@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>TPMySQL</title>
 </head>
 <body>
@@ -51,12 +52,16 @@
                     }
 
                         echo"</table>";
+                        echo "SELECT medecin.nom,medecin.prenom,medicament.nomCommercial 
+                              FROM `medecin`,`prescription`,`medicament`,`consultation` 
+                              WHERE medicament.id_codeSS = prescription.id_codeSS 
+                              AND prescription.id_numConsultation = consultation.id_numConsultation 
+                              AND consultation.id_matricule = medecin.id_matricule";
 
                         $LesDonneesBrutesDeLaBdd ->closeCursor();
                         }
                         catch (Exception $erreur){
-                        }
-                        
+                        }   
                 }
                 else{
                     echo "erreur";

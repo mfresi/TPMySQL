@@ -6,6 +6,7 @@ class user
     private $_MDP ='1234';
 
 
+
     //méthodes :
     public function AfficherNom(){
 
@@ -31,6 +32,14 @@ class user
     public function SetMDP($NouveauMDP){
 
         $this->_MDP = $NouveauMDP;
+    }
+    public function afficher_requet_select($marequete){
+
+        if($larequete == $this->afficher_requet_select($marequete)){
+
+            return $larequete;
+        }
+        
     }
 
 }
