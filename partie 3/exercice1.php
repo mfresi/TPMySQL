@@ -35,6 +35,35 @@
 
 </div>
 
+<textarea>
+
+<?php 
+
+        $Usernumero1 = new user1();
+    ?>
+
+<div class = "entete">
+
+    <?php echo "User";?>
+
+<div class = "corps">
+      
+        <tr>
+            <td>
+                <p>Nom : Fresi</p>
+                <p>Prenom : Mattei</p>
+            </td>
+        </tr>
+</div>
+
+<div class = "piedpage">
+
+    <?php $Usernumero1->afficherUser();?>
+
+</div>
+
+</textarea>
+
 
 <a href="//192.168.65.195/TPMySQL/partie%203/">Retour</a>
 </body>
