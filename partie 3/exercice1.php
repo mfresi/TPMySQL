@@ -14,57 +14,37 @@
 
         $Usernumero1 = new user1();
     ?>
+<div>
+    <div class = "entete">
 
-<div class = "entete">
+        <?php echo "User";?>
+    </div>
+    <div class = "corps">
+        
+            <tr>
+                <td>
+                    <p>Nom : Fresi</p>
+                    <p>Prenom : Mattei</p>
+                </td>
+            </tr>
+    </div>
 
-    <?php echo "User";?>
+    <div class = "piedpage">
 
-<div class = "corps">
-      
-        <tr>
-            <td>
-                <p>Nom : Fresi</p>
-                <p>Prenom : Mattei</p>
-            </td>
-        </tr>
+        <?php $Usernumero1->afficherUser();?>
+
+    </div>
 </div>
 
-<div class = "piedpage">
+<a href="../partie%203/">Retour</a>
 
-    <?php $Usernumero1->afficherUser();?>
-
-</div>
-
-<textarea>
-
-<?php 
-
-        $Usernumero1 = new user1();
-    ?>
-
-<div class = "entete">
-
-    <?php echo "User";?>
-
-<div class = "corps">
-      
-        <tr>
-            <td>
-                <p>Nom : Fresi</p>
-                <p>Prenom : Mattei</p>
-            </td>
-        </tr>
-</div>
-
-<div class = "piedpage">
-
-    <?php $Usernumero1->afficherUser();?>
-
-</div>
-
-</textarea>
-
-
-<a href="//192.168.65.195/TPMySQL/partie%203/">Retour</a>
+<?php
+        echo 
+     highlight_file(
+     './'.
+     basename(
+     __FILE__),
+     true);
+?>
 </body>
 </html>

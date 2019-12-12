@@ -3,10 +3,10 @@ class personnage{
 
     private $_Pseudo;
     private $_Vie;
+    private $_Valeurattaque;
 
-    public function __construct($_Pseudo){
-        $this->_Vie = 100;
-        $this->_Pseudo = $_Pseudo; 
+    public function __construct(){
+        $this->_Vie = 100; 
         
     }
 
@@ -19,6 +19,16 @@ class personnage{
     public function afficherPseudo(){
         echo '<p>ton pseudo est '.$this->_Pseudo.'</p>';
 
+    }
+
+    public function attaquer($Personnage2){
+
+        $this->_Valeurattaque = 50;
+    }
+
+    public function defense($_Valeurattaque){
+
+        $this->_Vie = $_Vie - $this->_Valeurattaque;
     }
 }
 ?>

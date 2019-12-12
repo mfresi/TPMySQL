@@ -1,4 +1,4 @@
-<?php require("Personnage.php"); ?>
+<?php require("Personnage_exo2.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +17,15 @@
 
 
 
-<a href="//192.168.65.195/TPMySQL/partie%203/">Retour</a>
+<a href="../partie%203/">Retour</a>
+
+<?php
+        echo 
+     highlight_file(
+     './'.
+     basename(
+     __FILE__),
+     true);
+?>
 </body>
 </html>
