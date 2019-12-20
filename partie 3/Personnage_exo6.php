@@ -78,6 +78,6 @@ class personnage{
 
     public function getSoin(){
 
-        echo "<p>Apres etre soigne la vie de ".$this->_Pseudo." est de ".$this->_Vie." points de vie</p>";
+        echo "<p>Apres etre soigne la vie de ".$this->_Pseudo." est de ".$this->_Vie." points de vie.</p>";
     }
 }

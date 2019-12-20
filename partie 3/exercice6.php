@@ -22,8 +22,8 @@
              $perso1->afficherVie();
              $perso1->soigner(150);
              $perso1->getSoin();
-             $perso2->soigner(100);
-             $perso2->getSoin();
+             //$perso2->soigner(100);
+             //$perso2->getSoin();
              
     ?>
 
