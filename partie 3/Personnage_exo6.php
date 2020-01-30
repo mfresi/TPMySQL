@@ -8,9 +8,10 @@ class personnage{
     private $_ValeurSoin;
 
 
-    public function __construct($leid){
+    public function __construct($leid,$lenom){
 
         $this->_id = $leid;
+        $this->_Pseudo = $lenom;
         
         try {
             $_id = new PDO('mysql:host=192.168.65.195; dbname=Exercice_php_partie3;charset=utf8','matmat', 'matmat');
@@ -39,7 +40,7 @@ class personnage{
 
     public function afficherPseudo(){
 
-        echo '<p>ton pseudo est '.$this->_Pseudo.'</p>';
+        echo '<p>Ton pseudo est '.$this->_Pseudo.'</p>';
     }
 
     public function attaquer($Adversaire){
@@ -79,5 +80,15 @@ class personnage{
     public function getSoin(){
 
         echo "<p>Apres etre soigne la vie de ".$this->_Pseudo." est de ".$this->_Vie." points de vie.</p>";
+    }
+
+    public function getID(){
+
+        return $this->_id;
+    }
+
+    public function getNom(){
+
+        return $this->_Pseudo;
     }
 }

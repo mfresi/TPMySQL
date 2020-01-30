@@ -28,7 +28,7 @@ class personnage{
 
     public function defense($_Valeurattaque){
 
-        $this->_Vie = $_Vie - $this->_Valeurattaque;
+        $this->_Vie =- $this->_Valeurattaque;
     }
 }
 ?>

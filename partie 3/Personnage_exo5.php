@@ -12,11 +12,11 @@ class personnage{
         $this->_id = $leid;
         
         try {
-            $_id = new PDO('mysql:host=192.168.65.195; dbname=Exercice_php_partie3;charset=utf8','matmat', 'matmat');
+            $_id = new PDO('mysql:host=localhost; dbname=bddalcool;charset=utf8','root', 'root');
 
             $LesDonneesBrutesDeLaBdd = $_id->query("SELECT * FROM Personnage WHERE id_Personnage = ".$this->_id."");   
 
-            $TableauDeDonnee = $LesDonneesBrutesDeLaBdd ->fetch();
+            $TableauDeDonnee = $LesDonneesBrutesDeLaBdd->fetch();
             $this->_Pseudo =  $TableauDeDonnee['Pseudo'];
             $this->_Vie =  $TableauDeDonnee['Vie'];
             $this->_Valeurattaque =  $TableauDeDonnee['Attaque'];
